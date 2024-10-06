@@ -1,0 +1,234 @@
+/* Estilo geral da página */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f5f5dc; /* cor de fundo clara */
+  color: #333;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Estilo da App */
+.App {
+  text-align: center;
+  background-color: #f5f5dc; /* cor de fundo clara */
+  padding: 20px;
+  font-family: 'Arial', sans-serif;
+  border-radius: 10px; /* Adiciona bordas arredondadas ao contêiner */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+}
+
+h1 {
+  font-size: 2rem;
+  color: black;
+}
+
+/* Estilo para o rótulo "Livro" */
+.book-label {
+  font-size: 1.5rem; /* Tamanho do texto */
+  margin: 10px 0; /* Margem superior e inferior */
+  color: black; /* Cor do texto */
+}
+
+/* Estilo do formulário */
+form {
+  display: flex;
+  flex-direction: column; /* Alinha os elementos verticalmente */
+  align-items: center; /* Centraliza os itens do formulário */
+}
+
+/* Estilo dos campos de entrada */
+.input-container {
+  width: 40px; /* Define a largura dos campos de entrada */
+  margin-bottom: 10px; /* Margem abaixo de cada campo */
+  margin-left: -18px;
+}
+
+label {
+  font-size: 1rem; /* Tamanho da fonte dos rótulos */
+  margin-bottom: 5px; /* Espaçamento abaixo do rótulo */
+}
+
+.input-box {
+  width: 100%; /* O campo ocupa 100% da largura do container */
+  padding: 7px; /* Espaçamento interno */
+  border: 2px solid #0080ff; /* azul para o contorno */
+  border-radius: 5px; /* Bordas arredondadas */
+  font-size: 1.2rem; /* Tamanho da fonte */
+}
+
+/* Estilo do botão de envio */
+.submit-button {
+  width: 80px; /* Largura do botão igual à dos campos */
+  padding: 10px; /* Espaçamento interno */
+  font-size: 1.2rem; /* Tamanho da fonte do botão */
+  color: white; /* Cor do texto */
+  background-color: #007bff; /* azul */
+  border: none; /* Sem borda */
+  border-radius: 5px; /* Bordas arredondadas */
+  cursor: pointer; /* Muda o cursor para indicar um botão */
+  margin-top: 10px; /* Espaçamento acima do botão */
+}
+
+.submit-button:hover {
+  background-color: #0056b3; /* Cor do botão ao passar o mouse */
+}
+
+/* Estilo das caixas de perguntas e tentativas */
+.question-box {
+  background-color: black;
+  color: red;
+  font-size: 1.5rem;
+  padding: 6px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+}
+
+.attempt-box {
+  background-color: black;
+  color: white;
+  font-size: 1.3rem;
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+}
+
+/* Estilo dos botões de opções */
+.button-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.option-button {
+  padding: 20px;
+  font-size: 1.5rem;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.option-0 {
+  background-color: red;
+}
+
+.option-1 {
+  background-color: yellow;
+  color: black; /* Melhor visibilidade no amarelo */
+}
+
+.option-2 {
+  background-color: blue;
+}
+
+.option-3 {
+  background-color: green;
+}
+
+/* Botão de reiniciar jogo */
+.reset-button {
+  background-color: lightgray;
+  color: black;
+  padding: 10px;
+  font-size: 1rem;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+
+.reset-button:hover {
+  background-color: darkgray;
+}
+
+/* Estilo adicional para parágrafos */
+p {
+  margin-top: 10px;
+  font-weight: bold;
+  color: green;
+}
+
+/* Estilo para a caixa de mensagem */
+.message-box {
+  width: 300px; /* Defina uma largura fixa */
+  height: 55px; /* Defina uma altura fixa */
+  margin: 0 auto; /* Centraliza a caixa */
+  padding: 10px; /* Adiciona algum preenchimento */
+  font-size: 1.2rem; /* Tamanho da fonte */
+  text-align: center; /* Alinha o texto ao centro */
+  color: white; /* Cor do texto */
+  background-color: black; /* Cor de fundo */
+  border-radius: 5px; /* Bordas arredondadas */
+  line-height: 1.5; /* Ajuste o espaçamento entre linhas, se necessário */
+  overflow: hidden; /* Oculta texto que não cabe na caixa */
+}
+/* Estilo do botão de envio */
+.reset-button2 {
+  background-color: rgb(11, 238, 26);
+  color: rgb(0, 0, 0);
+  padding: 11px;
+  font-size: 1rem;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+/* Responsividade */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 1.5rem; /* Ajusta o tamanho da fonte para telas menores */
+  }
+
+  .question-box,
+  .attempt-box {
+    font-size: 1.5rem; /* Ajusta o tamanho da fonte para perguntas e tentativas */
+  }
+
+  .input-box {
+    font-size: 1rem; /* Ajusta o tamanho da fonte dos campos de entrada */
+  }
+
+  .submit-button,
+  .reset-button,
+  .reset-button2 {
+    font-size: 1rem; /* Ajusta o tamanho da fonte dos botões */
+    padding: 8px; /* Ajusta o espaçamento interno */
+  }
+
+  .message-box {
+    font-size: 1rem; /* Ajusta o tamanho da fonte da caixa de mensagem */
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 1.2rem; /* Ajusta o tamanho da fonte para telas ainda menores */
+  }
+
+  .input-box {
+    font-size: 0.9rem; /* Ajusta o tamanho da fonte dos campos de entrada */
+  }
+
+  .question-box,
+  .attempt-box {
+    font-size: 1.2rem; /* Ajusta o tamanho da fonte para perguntas e tentativas */
+  }
+
+  .submit-button,
+  .reset-button,
+  .reset-button2 {
+    font-size: 0.9rem; /* Ajusta o tamanho da fonte dos botões */
+    padding: 7px; /* Ajusta o espaçamento interno */
+  }
+
+  .message-box {
+    font-size: 0.9rem; /* Ajusta o tamanho da fonte da caixa de mensagem */
+  }
+}
